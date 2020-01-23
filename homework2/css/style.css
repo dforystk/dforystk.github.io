@@ -45,7 +45,12 @@ img{
 	text-align:right;
 
 }
-#yellow > h2, #yellow > p{
+
+#yellow > p{
+	color:black;
+}
+
+#yellow > h2{
 	color:black;
 	text-shadow: 5px 5px 2px #c7e2c7;
 }
