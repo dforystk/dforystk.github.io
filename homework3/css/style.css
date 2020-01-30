@@ -15,10 +15,14 @@ body{
   margin: 1.2em;
   background-size: cover ;
   background-position: center;
+  background: url(images/pigeon-background.jpg), #DDDDDD;
+
+
 }
 
 main{
   margin-bottom: 100px;
+
 }
 
 h1{
@@ -46,6 +50,9 @@ a{
   text-decoration-style: wavy;
 }
 
+
+
+
 table{
     border: 2px solid black;
     align-self:center;
@@ -64,18 +71,18 @@ td{
 
 tr{}
 
-*{
-    background-image: url('images/pigeon-background.jpg');
-}
+*{}
+
 
 thead tr:first-child th:first-child{}
 
 footer{
-  position:fixed;
+  position:absolute;
   left:0px;
   bottom:0px;
   width:100%;
   background:black;
   text-align:center;
   color: white;
+  min-height: 60px;
 }
