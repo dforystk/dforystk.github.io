@@ -19,9 +19,11 @@ body{
   /*background-color: #DDDDDD;*/
 }
 
+
 main{
   margin-bottom: 100px;
 }
+
 
 h1{
   color: #8000FF;
@@ -30,9 +32,11 @@ h1{
   text-align: center;
 }
 
+
 caption{
   margin:5px 0px;
 }
+
 
 p{
   font-size: 16px;
@@ -48,17 +52,17 @@ a{
   text-decoration-style: wavy;
 }
 
-
-
-
 table{
     border: 2px solid black;
     align-self: center;
+    margin: 0 auto;
 }
 
 .colhead{
   background-color: #7e0820;
   color: white;
+  text-align: center;
+  text-transform: uppercase;
   min-width: 100px;
   padding: 10px;
 }
