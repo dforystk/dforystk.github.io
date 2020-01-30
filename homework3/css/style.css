@@ -10,12 +10,11 @@ Make sure to learn what the starter code does!!
 
 body{
   color: black;
-  font-family: sans-serif;
+  font-family: url('https://fonts.googleapis.com/css?family=Andika&display=swap'), sans-serif;
   font-size: 16px;
   margin: 1.2em;
   background-size: cover ;
   background-position: center;
-  background-image: url('images/pigeon-background.jpg');
 }
 
 main{
@@ -33,9 +32,19 @@ caption{
   margin:5px 0px;
 }
 
-p{}
+p{
+  font-size: 16px;
+  padding: 10px 0px 0px 0px;
+}
 
-a{}
+
+
+a{
+  font-size: 16px;
+  color: #C12258;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
 
 table{
     border: 2px solid black;
@@ -56,7 +65,7 @@ td{
 tr{}
 
 *{
-  font-family:url('https://fonts.googleapis.com/css?family=Andika&display=swap');
+    background-image: url('images/pigeon-background.jpg');
 }
 
 thead tr:first-child th:first-child{}
