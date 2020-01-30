@@ -15,14 +15,12 @@ body{
   margin: 1.2em;
   background-size: cover ;
   background-position: center;
-  background: url(images/pigeon-background.jpg), #DDDDDD;
-
-
+  background-image: url('images/pigeon-background.jpg');
+  background-color: #DDDDDD;
 }
 
 main{
   margin-bottom: 100px;
-
 }
 
 h1{
@@ -55,7 +53,7 @@ a{
 
 table{
     border: 2px solid black;
-    align-self:center;
+    align-self: center;
 }
 
 .colhead{
@@ -72,6 +70,10 @@ td{
 tr{}
 
 *{}
+
+:focus{
+  border: 2px solid black;
+};
 
 
 thead tr:first-child th:first-child{}
