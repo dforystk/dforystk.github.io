@@ -16,7 +16,7 @@ body{
   background-size: cover ;
   background-position: center;
   background-image: url('images/pigeon-background.jpg');
-  background-color: #DDDDDD;
+  /*background-color: #DDDDDD;*/
 }
 
 main{
@@ -59,15 +59,32 @@ table{
 .colhead{
   background-color: #7e0820;
   color: white;
+  min-width: 100px;
+  padding: 10px;
 }
 
-.rowhead{}
+.rowhead{
+  border-top: 2px solid black;
+}
 
 td{
   padding: 15px;
+  border-top: 2px solid black;
 }
 
-tr{}
+
+tr:nth-child(odd){
+  background-color: #D1D1D1;
+}
+
+tr:nth-child(even){
+  background-color: transparent;
+}
+
+tr:hover{
+  background-color: rgb(126,8,32);
+  opacity: 0.5;
+}
 
 *{}
 
