@@ -61,6 +61,7 @@ table{
     align-self: center;
     margin: 0 auto;
     border-radius: 15px;
+    border-collapse: separate;
 }
 
 .colhead{
@@ -100,10 +101,17 @@ tr:hover{
   border: 2px solid black;
 };
 
-
-thead tr:first-child th:first-child{
-  border-left: none;
+tr:first-child{
+  border-top-left-radius: 15px
 }
+
+
+
+
+
+
+
+
 
 footer{
   position:absolute;
