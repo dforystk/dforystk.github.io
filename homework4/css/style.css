@@ -124,6 +124,7 @@ header p{
   /*Your code here */
   /* See documentation for mobile view */
   grid-column: 2 / span 1;
+  align-self: center;
 
 }
 
@@ -139,24 +140,28 @@ header p{
 .about, .about-image{
   /*Your code here */
   /* See documentation for mobile view */
+  grid-row: 3 / 4;
 
 }
 
 .method, .method-image{
   /*Your code here */
   /* See documentation for mobile view */
+  grid-row: 4 / 5;
 }
 
 
 .clients, .clients-image{
   /*Your code here */
   /* See documentation for mobile view */
+  grid-row: 5 / 6;
 }
 
 
 .contact, .contact-image{
   /*Your code here */
   /* See documentation for mobile view */
+  grid-row: 6 / 7;
 }
 
 .text-block{
