@@ -82,7 +82,7 @@ nav{
   text-align: left;
   /*Your code here*/
   /*Span the top row*/
-  grid-column: 1 / span 3;
+  grid-column: 1 / -1;
 
 
 }
@@ -99,7 +99,7 @@ header{
   /* Set background-image to header.jpg in the images folder */
   /* Span one row */
   background-image: url('../images/header.jpg');
-  grid-column: 1 / -1;
+  grid-column: 1 / 4;
 }
 
 header p{
@@ -116,8 +116,7 @@ header p{
   display: grid;
   grid-template-columns: 100px 400px 100px;
   grid-template-rows: 30px auto auto auto auto auto 100px;
-  grid-row-gap: 15px;
-  
+  grid-row-gap: 15px; 
 }
 
 .about, .method, .clients, .contact{
@@ -125,7 +124,6 @@ header p{
   /* See documentation for mobile view */
   grid-column: 2 / span 1;
   align-self: center;
-
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
@@ -134,7 +132,7 @@ header p{
    max-height: 700px;
    grid-column: 1 / -1;
    max-width: 100%;
-
+   overflow: hidden;
 }
 
 .about, .about-image{
@@ -170,7 +168,7 @@ header p{
   padding: 30px;
   /*Your code here:*/
   /*Align the content in the center */
-  text-align: center;
+  align-self: center;
 }
 
 
@@ -180,7 +178,9 @@ header p{
   .container{
   /*Your code here 
   /* See documentation for desktop view */ 
-    
+    display: grid;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
   }
 
   nav{
@@ -194,12 +194,14 @@ header p{
   .about, .clients, .method-image, .contact-image{
   /*Your code here */
   /* See documentation for desktop view */ 
+    grid-column-start: 3 / span 2;
   }
 
   .about-image, .clients-image, .method, .contact{
     /*Your code here */
-    /* See documentation for desktop view */ 
-    }
+    /* See documentation for desktop view */
+    grid-column-start: 2 / span 2;
+  }
 
 
 }  /*End the media query*/
