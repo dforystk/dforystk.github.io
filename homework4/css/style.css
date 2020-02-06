@@ -91,7 +91,8 @@ header{
   background-attachment: fixed; /* Parallax effect */     
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
-  background-size: cover;       /* Parallax effect */
+  background-size: cover;
+  color: #454545;       /* Parallax effect */
   color: white;
   height: 400px;                /* Parallax effect */
 
