@@ -46,12 +46,17 @@ nav a:hover{
   z-index: 1;
 
   /*Your code here - position relative to the parent */
-  /*Your code here - place 40px higher */;
+  position: relative;
+  /*Your code here - place 40px higher */
+  top: -40px;
 }
 
 /*Your code here*/
 /*Add the selector and rule to move the skip 
 link to the exact top of the page.*/
+.skip a:focus{
+  top: 0px;
+}
  
 
 /*Your code here*/
