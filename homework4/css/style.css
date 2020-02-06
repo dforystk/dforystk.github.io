@@ -99,7 +99,7 @@ header{
   /* Set background-image to header.jpg in the images folder */
   /* Span one row */
   background-image: url('../images/header.jpg');
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
 }
 
 header p{
@@ -194,13 +194,15 @@ header p{
   .about, .clients, .method-image, .contact-image{
   /*Your code here */
   /* See documentation for desktop view */ 
-    grid-column-start: 3 / span 2;
+    grid-column: 3 / span 2;
+    max-width: 100%;
   }
 
   .about-image, .clients-image, .method, .contact{
     /*Your code here */
     /* See documentation for desktop view */
-    grid-column-start: 2 / span 2;
+    grid-column: 2 / span 2;
+    max-width: 100%;
   }
 
 
