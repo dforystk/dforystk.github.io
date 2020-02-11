@@ -83,9 +83,7 @@ Keyframes for animation*/
     min-height: 500px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-
-  
+    justify-content: center;  
 }
 
 .card {
@@ -217,4 +215,18 @@ header{
     flex-basis: 200px;
   }
 
+  body{
+  	background-image: none;
+  }
+
+  .pricing{
+  	align-items: top;
+  }
+
+}
+
+@media (prefers-reduced-animation: reduce){
+	#logo{
+		animation: none;
+	}
 }
