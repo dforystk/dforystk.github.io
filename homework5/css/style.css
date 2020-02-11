@@ -53,6 +53,11 @@ footer{
 /*
 Keyframes for animation*/
 
+@keyframes logo{
+	from{ width: 25px; }
+	to{ width: 420px; }
+}
+
 @-webkit-keyframes logo_wiggle{
 
 }
@@ -62,7 +67,11 @@ Keyframes for animation*/
 } 
 
 #logo{
-  
+	width: 25px;
+	animation-name: logo;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 /* Cards! */
