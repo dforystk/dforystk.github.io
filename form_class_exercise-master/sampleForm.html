@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Sample Form</title>
+   <link rel="stylesheet" type="text/css" href="css/sample-style.css">
+</head>
+
+<body>
+<form action="https://formspree.io/myywlzdd" method="POST">
+<fieldset>
+   <legend>User Data</legend>
+   <div class = "contact">
+      <label for ="name">Name:</label><input type="text" id ="name" name="name" value="David"/> 
+      <label for ="pass">Password:</label><input type="password" id="pass" name ="pw"/> 
+      <label for ="addr">Address:</label><textarea id = "addr"></textarea>
+   </div>
+   <div>
+   <br>Select Game:
+   <label><input type="checkbox" />Hockey</label>
+   <label><input type="checkbox" />Football</label>
+   <label><input type="checkbox" />Badminton</label>
+   <label><input type="checkbox" />Cricket</label>
+   <label><input type="checkbox" />Volleyball</label>
+   </div>
+   <div>
+   Grade Level<br>
+   <input type="radio" id = "f" name ="level" checked> <label for ="f">Freshman</label><br>
+   <input type="radio" name ="level" id = "s"> <label for ="s">Sophomore</label><br>
+   <input type="radio" name ="level" id = "j"> <label for ="j">Junior</label><br>
+   <input type="radio" name ="level1" id = "sr"><label for ="sr">Senior</label><br>
+   <input type="radio" name ="level1" id = "grad"> <label for ="grad">Grad</label><br>
+   <input type="radio" name ="level1" id = "other"> <label for ="other">Other</label><br>
+   </div>
+   <div>
+      Select your age
+      <select>
+      <option> select </option>
+      <option> 15 </option>
+      <option> 16 </option>
+      <option> 17 </option>
+      <option> 18 </option>
+      <option> 19</option>
+      <option> 20 </option>
+      <option> 21 </option>
+      <option> more than 22 </option>
+      </select>
+   </div>
+   <div>
+      Resume: <input type="file" />
+   </div>
+   <div>
+      Birthdate: <input type ="date"/>
+      </div>
+   <div>
+      <input type="reset"/>
+      <input type="submit" value="Submit Form"/>
+   </div>
+   </fieldset>
+   </form>
+
+</body>
+</html>
