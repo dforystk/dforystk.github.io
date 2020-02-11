@@ -54,8 +54,12 @@ footer{
 Keyframes for animation*/
 
 @keyframes logo{
-	from{ width: 25px; }
-	to{ width: 420px; }
+	from{ 
+		width: 25px;
+	}
+	to{ 
+		width: 420px; 
+	}
 }
 
 @-webkit-keyframes logo_wiggle{
@@ -135,8 +139,9 @@ Keyframes for animation*/
 /* Gallery! */
 
 .gallery{
-  
   min-height: 600px;
+  flex-wrap: wrap;
+
 }
 
 .gallery > img{
@@ -156,8 +161,11 @@ header{
 }
 
 .nav_links{
- 
-  list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	list-style: none;
 }
 
 .nav_item a{
