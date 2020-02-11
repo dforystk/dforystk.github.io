@@ -147,9 +147,12 @@ Keyframes for animation*/
 
 /* Navbar */
 header{
-  
   background: #fff;
   border-bottom: 3px solid #50C7C7;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav_links{
