@@ -139,7 +139,8 @@ Keyframes for animation*/
 .gallery{
   min-height: 600px;
   flex-wrap: wrap;
-
+  justify-content: center;
+  align-items: center;
 }
 
 .gallery > img{
@@ -182,7 +183,7 @@ header{
 
   /* Cards! */
   .card {
-    flex-basis: 225px;
+    flex-basis: 250px;
   }
 
   .card_big{
@@ -225,7 +226,7 @@ header{
 
 }
 
-@media (prefers-reduced-animation: reduce){
+@media prefers-reduced-animation: reduce{
 	#logo{
 		animation: none;
 	}
