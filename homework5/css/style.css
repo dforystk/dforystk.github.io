@@ -87,7 +87,6 @@ Keyframes for animation*/
 }
 
 .card {
-  
   margin: 12px;
   background: #fff;
   border-radius: 7px;
@@ -137,10 +136,13 @@ Keyframes for animation*/
 /* Gallery! */
 
 .gallery{
+	display: flex;
   min-height: 600px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+
 }
 
 .gallery > img{
@@ -220,13 +222,17 @@ header{
   	background-image: none;
   }
 
+  .gallery, #gallery{
+  	display: none;
+  }
+
   .pricing{
   	align-items: top;
   }
 
 }
 
-@media prefers-reduced-animation: reduce{
+@media screen and (prefers-reduced-animation: reduce){
 	#logo{
 		animation: none;
 	}
