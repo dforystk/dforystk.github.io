@@ -226,10 +226,13 @@ header{
   	display: none;
   }
 
+  #gallery{
+  	display: none;
+  }
+
   .pricing{
   	align-content: top;
   }
-
 }
 
 @media screen and (prefers-reduced-motion: reduce){
