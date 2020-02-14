@@ -141,8 +141,6 @@ Keyframes for animation*/
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
-
 }
 
 .gallery > img{
@@ -181,6 +179,8 @@ header{
           text-decoration-style: dotted;
 }
 
+/*----------------- DESKTOP VIEW ---------------------------------
+*/
 @media screen and (min-width: 850px){
 
   /* Cards! */
@@ -222,18 +222,19 @@ header{
   	background-image: none;
   }
 
-  .gallery, #gallery{
+  .gallery{
   	display: none;
   }
 
   .pricing{
-  	align-items: top;
+  	align-content: top;
   }
 
 }
 
-@media screen and (prefers-reduced-animation: reduce){
+@media screen and (prefers-reduced-motion: reduce){
 	#logo{
 		animation: none;
+		width: 420px;
 	}
 }
