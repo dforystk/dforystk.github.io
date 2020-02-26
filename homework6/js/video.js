@@ -57,7 +57,6 @@ function changeVolume() {
 	volume.innerHTML = slider.value + "%"
 }
        
-
 function gray() { 
 	video.style.filter = 'grayscale(100%'
 	console.log("In grayscale")
@@ -67,3 +66,8 @@ function color() {
 	video.style.filter = 'grayscale(0%)'
 	console.log("In color") 
 }
+
+// ----------PLAY BUTTON-------------
+
+let playbutton = document.querySelector('#play')
+playbutton.innerHTML = '<img src="../buttons/play_button.png"/>'
