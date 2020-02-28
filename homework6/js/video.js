@@ -19,12 +19,12 @@ function pauseVid() {
 	console.log("Pause Video");
 } 
 function decreaseSpeed() { 
-	video.playbackRate -= .2
+	video.playbackRate *= .8
   	console.log("Speed is "+ video.playbackRate);
 } 
 
 function increaseSpeed() {
-	video.playbackRate += .25
+	video.playbackRate *= 1.25
 	console.log("Speed is "+ video.playbackRate);
 } 
 
@@ -58,16 +58,11 @@ function changeVolume() {
 }
        
 function gray() { 
-	video.style.filter = 'grayscale(100%'
+	video.classList.add('grayscale')
 	console.log("In grayscale")
 }
 
 function color() {
-	video.style.filter = 'grayscale(0%)'
+	video.classList.remove('grayscale')
 	console.log("In color") 
 }
-
-// ----------PLAY BUTTON-------------
-
-let playbutton = document.querySelector('#play')
-playbutton.innerHTML = '<img src="../buttons/play_button.png"/>'
