@@ -38,7 +38,7 @@ function mute() {
 	console.log(video.muted)
   	if (video.muted){
   		video.muted=false;
-		console.log("Unmuted");
+		console.log("Unmuted")
   	}
     else{
     	video.muted = true;
@@ -46,7 +46,7 @@ function mute() {
 	}
 	console.log(mute)
 	var button= document.querySelector('#mute')
-	button.innerHTML="Unmuted"
+	button.innerHTML="Muted"
 }
 
 function changeVolume() {
