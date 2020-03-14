@@ -5,21 +5,28 @@ body{
 /*---------INDEX PAGE------------
 */
 
-.heading{
+.home_heading{
+	background-color: blue;
+	text-align: center;
+}
+
+.about_me_heading{
 	background-color: blue;
 	text-align: center;
 }
 
 #home:link, #about:link, #projects:link, #contact:link, #resume:link{
 	color: white;
+	text-decoration: none;
 }
 
 #home:visited, #about:visited, #projects:visited, #contact:visited, #resume:visited{
 	color: red;
+	text-decoration: none;
 }
 
 #navigation{
-	padding: 10px;
+	padding: 20px;
 }
 
 
@@ -30,10 +37,11 @@ body{
 	margin-right: auto;
 }
 
-#name{
+h1{
 	display: flex;
 	justify-content: center;
 	color: white;
+	margin-top: auto;
 }
 
 a.skip{
