@@ -2,6 +2,9 @@ body{
 	text-align: center;
 }
 
+/*---------INDEX PAGE------------
+*/
+
 .heading{
 	background-color: blue;
 	text-align: center;
@@ -16,13 +19,15 @@ body{
 }
 
 #navigation{
-	padding: 40px;
+	padding: 10px;
 }
 
 
 #profile {
-	height: 250px;
-	width: 200px;
+	height: 400px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #name{
@@ -48,11 +53,37 @@ a.skip:focus{
   text-decoration-style: solid;
 }
 
-#intro{
+.intro{
 	text-align: center;
+
 }
 
-img{
-	display: flex;
-	justify-content: flex-start;
+.resume_image{
+	width: 200px;
+	height 200px;
+	margin-right: auto;
+	margin-left: auto;
 }
+
+
+@media screen and (min-width: 850px){
+	#profile{
+		margin-left: auto;
+	}
+
+	.intro{
+		margin-right: auto;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
