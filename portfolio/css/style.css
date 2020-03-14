@@ -1,17 +1,36 @@
 body{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	display: flex;
 	text-align: center;
 }
 
 #navigation{
-	grid-column: 3;
-	display: flex;
-	justify-content: space-between;
+	grid-column: 2;
 }
 
 #profile {
 	height: 250px;
 	width: 200px;
 	grid-column: 2;
+}
+
+#name{
+	position: top;
+	grid-column: 2;
+}
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
 }
