@@ -15,14 +15,22 @@ body{
 	text-align: center;
 }
 
+.resume_page{
+	background-color: blue;
+	text-align: center;
+}
+
 #home:link, #about:link, #projects:link, #contact:link, #resume:link{
 	color: white;
 	text-decoration: none;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 32px;
 }
 
 #home:visited, #about:visited, #projects:visited, #contact:visited, #resume:visited{
 	color: red;
 	text-decoration: none;
+	font-family: 'Source Code Pro', monospace;
 }
 
 #navigation{
@@ -42,6 +50,7 @@ h1{
 	justify-content: center;
 	color: white;
 	margin-top: auto;
+	font-family: 'Pacifico', cursive;
 }
 
 a.skip{
