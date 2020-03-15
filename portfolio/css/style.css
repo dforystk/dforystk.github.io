@@ -22,12 +22,17 @@ body{
 	font-family: 'Source Code Pro', monospace;
 }
 
+#home:hover, #about:hover, #projects:hover, #contact:hover, #resume:hover{
+	color: yellow;
+}
+
+
 #navigation{
 	padding: 20px;
 }
 
 
-#profile {
+#profile{
 	height: 400px;
 	width: 300px;
 	margin-left: auto;
@@ -96,10 +101,6 @@ a.skip:focus{
 	}
 
 }
-
-
-
-
 
 
 
