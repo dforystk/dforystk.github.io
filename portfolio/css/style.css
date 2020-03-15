@@ -73,7 +73,17 @@ a.skip:focus{
 	margin-left: auto;
 }
 
+.foodquest_map{
+	height: 400px;
+}
 
+.foodquest_piechart{
+	height: 400px;
+}
+
+.foodquest_graph{
+	transform: rotate(90deg);
+}
 
 
 @media screen and (min-width: 850px){
