@@ -2,23 +2,12 @@ body{
 	text-align: center;
 }
 
-/*---------INDEX PAGE------------
-*/
-
-.home_heading{
+.heading{
 	background-color: blue;
 	text-align: center;
+	font-size: 28px;
 }
 
-.about_me_heading{
-	background-color: blue;
-	text-align: center;
-}
-
-.resume_page{
-	background-color: blue;
-	text-align: center;
-}
 
 #home:link, #about:link, #projects:link, #contact:link, #resume:link{
 	color: white;
@@ -45,6 +34,7 @@ body{
 	margin-right: auto;
 }
 
+
 h1{
 	display: flex;
 	justify-content: center;
@@ -53,6 +43,7 @@ h1{
 	font-family: 'Pacifico', cursive;
 }
 
+/*--------SKIP TO MAIN CONTENT----------*/
 a.skip{
   background: white;
   left: 0;
@@ -69,10 +60,10 @@ a.skip:focus{
   color: black;
   text-decoration-style: solid;
 }
+/*---------SKIP TO MAIN CONTENT------------*/
 
 .intro{
-	text-align: center;
-
+	text-align: left;
 }
 
 .resume_image{
@@ -81,6 +72,8 @@ a.skip:focus{
 	margin-right: auto;
 	margin-left: auto;
 }
+
+
 
 
 @media screen and (min-width: 850px){
