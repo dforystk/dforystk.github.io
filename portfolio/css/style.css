@@ -3,7 +3,8 @@ body{
 }
 
 .heading{
-	background-color: blue;
+	background: rgb(175,170,0);
+	background: radial-gradient(circle, rgba(175,170,0,1) 31%, rgba(0,91,249,1) 62%);
 	text-align: center;
 	font-size: 28px;
 }
@@ -90,14 +91,14 @@ a.skip:focus{
 	transform: rotate(90deg);
 }
 
+footer{
+	text-align: center;
+	background-image: url('images/um_logo.png');
+}
 
-@media screen and (min-width: 850px){
-	#profile{
-		margin-left: auto;
-	}
-
-	.intro{
-		margin-right: auto;
+@media screen and (max-width: 850px){
+	.foodquest_graph{
+		transform: rotate(0deg);
 	}
 
 }
