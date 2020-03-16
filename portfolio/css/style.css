@@ -69,7 +69,19 @@ a.skip:focus{
 /*---------SKIP TO MAIN CONTENT------------*/
 
 .intro{
-	text-align: left;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Source Code Pro', monospace;
+	
+}
+
+.about_me{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	font-family: 'Source Code Pro', monospace;
+
+
 }
 
 .resume_image{
@@ -79,22 +91,29 @@ a.skip:focus{
 	margin-left: auto;
 }
 
-.foodquest_map{
-	height: 400px;
+
+#project_gallery{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
 }
 
-.foodquest_piechart{
-	height: 400px;
+.foodquest_intro{
+	font-family: 'Source Code Pro', monospace;
+	text-align: center;
 }
 
-.foodquest_graph{
-	transform: rotate(90deg);
+.foodquest{
+	height:400px;
 }
+
 
 footer{
 	text-align: center;
-	background-image: url('images/um_logo.png');
-}
+	background-color: black;
+	color: white;
+	}
 
 @media screen and (max-width: 850px){
 	.foodquest_graph{
