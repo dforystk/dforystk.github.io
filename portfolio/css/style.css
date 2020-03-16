@@ -1,12 +1,25 @@
 body{
 	text-align: center;
+	background-image: url('images/concrete_seamless.png');
 }
+
+#about_me_page{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
 
 .heading{
 	background: rgb(175,170,0);
 	background: radial-gradient(circle, rgba(175,170,0,1) 31%, rgba(0,91,249,1) 62%);
 	text-align: center;
 	font-size: 28px;
+}
+
+
+#about_me_header{
+	grid-column: 1/ span 3;
 }
 
 
@@ -76,12 +89,15 @@ a.skip:focus{
 }
 
 .about_me{
-	text-align: center;
-	display: flex;
-	justify-content: center;
+	text-align: left;
+	grid-column: 1;
+	grid-row: 1;
 	font-family: 'Source Code Pro', monospace;
+}
 
-
+.about_me2{
+	text-align: right;
+	font-family: 'Source Code Pro', monospace;
 }
 
 .resume_image{
@@ -91,12 +107,38 @@ a.skip:focus{
 	margin-left: auto;
 }
 
+.um_logo{
+}
+
 
 #project_gallery{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
+}
+
+/*-------------INDIVIDUAL GALLERY IMAGES--------------
+*/
+
+.foodquest1{
+	filter: grayscale(1);
+}
+
+.foodquest2{
+	filter: hue-rotate(45deg);
+}
+
+.foodquest3{
+	filter: blur(1px);
+}
+
+.foodquest5{
+	filter: saturate(125%);
+}
+
+.foodquest6{
+	filter: hue-rotate(270deg);
 }
 
 .foodquest_intro{
