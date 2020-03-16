@@ -51,14 +51,14 @@ body{
 }
 
 #home:link, #about:link, #projects:link, #contact:link, #resume:link{
-	color: white;
+	color: red;
 	text-decoration: none;
 	font-family: 'Source Code Pro', monospace;
 	font-size: 32px;
 }
 
 #home:visited, #about:visited, #projects:visited, #contact:visited, #resume:visited{
-	color: red;
+	color: #d10000;
 	text-decoration: none;
 	font-family: 'Source Code Pro', monospace;
 }
@@ -67,8 +67,12 @@ body{
 	color: yellow;
 }
 
-#index_link{
-	color: orange;
+a{
+	color: white;
+}
+
+a:hover{
+	color: yellow;
 }
 
 #navigation{
