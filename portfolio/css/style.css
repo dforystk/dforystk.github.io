@@ -3,25 +3,13 @@ body{
 	background-image: url('images/concrete_seamless.png');
 }
 
-#about_me_page{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-}
-
-
+/*--------INDEX PAGE---------*/
 .heading{
 	background: rgb(175,170,0);
 	background: radial-gradient(circle, rgba(175,170,0,1) 31%, rgba(0,91,249,1) 62%);
 	text-align: center;
 	font-size: 28px;
 }
-
-
-#about_me_header{
-	grid-column: 1/ span 3;
-}
-
 
 #home:link, #about:link, #projects:link, #contact:link, #resume:link{
 	color: white;
@@ -40,11 +28,9 @@ body{
 	color: yellow;
 }
 
-
 #navigation{
 	padding: 20px;
 }
-
 
 #profile{
 	height: 400px;
@@ -53,7 +39,6 @@ body{
 	margin-right: auto;
 }
 
-
 h1{
 	display: flex;
 	justify-content: center;
@@ -61,6 +46,79 @@ h1{
 	margin-top: auto;
 	font-family: 'Pacifico', cursive;
 }
+
+.intro{
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Source Code Pro', monospace;
+	
+}
+
+footer{
+	text-align: center;
+	background-color: black;
+	color: white;
+	position: relative;
+}
+/*------------ABOUT ME PAGE-------------*/
+
+#about_me_main{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+#about_me_header{
+	grid-column: 1/ span 3;
+}
+
+.about_me{
+	text-align: left;
+	grid-column: 1;
+	grid-row: 1;
+	font-family: 'Source Code Pro', monospace;
+}
+
+.about_me2{
+	text-align: right;
+	font-family: 'Source Code Pro', monospace;
+	grid-column: 2;
+
+}
+
+#about_me_footer{
+	grid-column: 1/4;
+}
+
+.um_logo{
+	grid-row: 1;
+	grid-column: 2;
+	justify-self: center;
+	opacity: 0.3;
+}
+
+.um_logo:hover{
+	opacity: 1;
+	transition: 1s ease-out;
+}
+
+.schoolcraft_logo{
+	grid-row: 1;
+	grid-column: 2;
+	justify-self: end;
+	opacity: 0.3;
+}
+
+.schoolcraft_logo:hover{
+	opacity: 1;
+	transition: 1s ease-out;
+}
+
+
+
+
+
+
+
 
 /*--------SKIP TO MAIN CONTENT----------*/
 a.skip{
@@ -79,26 +137,9 @@ a.skip:focus{
   color: black;
   text-decoration-style: solid;
 }
-/*---------SKIP TO MAIN CONTENT------------*/
 
-.intro{
-	text-align: center;
-	font-size: 20px;
-	font-family: 'Source Code Pro', monospace;
-	
-}
 
-.about_me{
-	text-align: left;
-	grid-column: 1;
-	grid-row: 1;
-	font-family: 'Source Code Pro', monospace;
-}
-
-.about_me2{
-	text-align: right;
-	font-family: 'Source Code Pro', monospace;
-}
+/*----------RESUME PAGE-----------*/
 
 .resume_image{
 	width: 200px;
@@ -107,9 +148,8 @@ a.skip:focus{
 	margin-left: auto;
 }
 
-.um_logo{
-}
 
+/*-----------PROJECTS PAGE--------------*/
 
 #project_gallery{
 	display: flex;
@@ -151,11 +191,7 @@ a.skip:focus{
 }
 
 
-footer{
-	text-align: center;
-	background-color: black;
-	color: white;
-	}
+
 
 @media screen and (max-width: 850px){
 	.foodquest_graph{
