@@ -93,8 +93,11 @@ h1{
 	text-align: center;
 	color: white;
 	font-size: 20px;
+	font-family: 'Source Code Pro', monospace;	
+}
+
+p{
 	font-family: 'Source Code Pro', monospace;
-	
 }
 
 footer{
@@ -211,6 +214,14 @@ a.skip:focus{
 	justify-content: center;
 }
 
+.project_title{
+	font-family: 'Source Code Pro', monospace;
+}
+
+#github{
+	color: orange;
+}
+
 /*-------------INDIVIDUAL GALLERY IMAGES--------------
 */
 
@@ -247,12 +258,19 @@ a.skip:focus{
 
 
 @media screen and (max-width: 850px){
-	.foodquest_graph{
-		transform: rotate(0deg);
+	.foodquest1, .foodquest2, .foodquest3, .foodquest4, .foodquest5, .foodquest6{
+		height: 300px;
+		width: 450px;
 	}
 
 }
 
+@media screen and (min-width: 850px){
+	body{
+		font-size: 18px;
+	}
+}
+	
 
 
 
