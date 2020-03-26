@@ -6,7 +6,7 @@ var y = 150;
 var canvas = document.querySelector('#canvas');
 var ctx = canvas.getContext('2d');
 
-ctx.fillstyle = 'red'
+ctx.fillstyle = 'blue'
 
 //You will want to add more
 
