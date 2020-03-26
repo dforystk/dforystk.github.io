@@ -14,8 +14,7 @@ ctx.fillstyle = 'blue'
 //Listeners!!
 //Add a listener for loading the window
 window.addEventListener('onload', function(e){
-	console.log("page loaded");
-
+	canvas.width = window.innerwidth * .75
 })
 //Add a listener for the mouse movement
 
