@@ -62,16 +62,16 @@ function draw (x,y) {
 
 function changeColor(e){
 	if (e.keyCode == 66){
-		color = "blue"
+		color = "rgb(0,128,255)"
 	};
 	if (e.keyCode == 82){
-		color = "red"
+		color = "rgb(255,0,0)"
 	};
 	if (e.keyCode == 71){
-		color = "green"
+		color = "rgb(0,255,0)"
 	};
 	if (e.keyCode == 89){
-		color = "yellow"
+		color = "rgb(255,255,0)"
 	};
 }
 
