@@ -1,14 +1,20 @@
 // Variables!
-var color ="red";
+var color = "red";
 var radius = 15;
 var x = 50;
 var y = 150;
 var canvas = document.querySelector('#canvas');
 var ctx = canvas.getContext('2d');
 
-ctx.fillStyle = color
-
 //You will want to add more
+function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+        x: evt.clientX - rect.left,
+        y: evt.clientY - rect.top
+    };
+}
+
 
 
 //Listeners!!
@@ -20,11 +26,12 @@ window.addEventListener('load', function(e){
 })
 //Add a listener for the mouse movement
 
-canvas.addEventListener('mousemove', function(e){
-	draw(25,25);
-	console.log(this);
-	console.log(e);
-})
+canvas.addEventListener("mousemove", function (e) {
+    var mousePos = getMousePos(canvas, e);
+    console.log(mousePos.x + ',' + mousePos.y);
+    draw(mousePos.x, mousePos.y)
+}, false);
+
 
 //Add a listener for the touch move
 canvas.addEventListener('mousedown', function(e){
@@ -43,7 +50,20 @@ canvas.addEventListener('keydown', function(e){
 function draw (x,y) {
         //use x and y below
         console.log("I'M GONNA DRAW")
-        //this always draws in position 50,50
+        ctx.fillStyle = color;
+        ctx.arc(x,y,15,0,2 * Math.PI);
         ctx.fill();
-        ctx.arc(15,15,15,0,2 * Math.PI);
     }
+
+// function drawCircle (x,y) {
+//         //use x and y below
+//         console.log("Drawing Circle")
+//         ctx.fill();
+//         ctx.fillStyle = color;
+//         ctx.arc(x,y,15,0,2 * Math.PI);
+//     }
+
+// --------------MOUSE POSITION--------------
+
+
+
