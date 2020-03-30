@@ -15,27 +15,6 @@ function getMousePos(canvas, evt) {
     };
 }
 
-function changeColor(e){
-	if (e.keyCode == 66){
-		color = "blue"
-	};
-	if (e.keyCode == 82){
-		color = "red"
-	};
-	if (e.keyCode == 71){
-		color = "green"
-	};
-	if (e.keyCode == 89){
-		color = "yellow"
-	};
-}
-
-function clearCanvas(e){
-	if (e.keyCode == 32){
-		ctx.clearRect(0,0,canvas.width,canvas.height);
-	}
-}
-
 //Listeners!!
 //Add a listener for loading the window
 
@@ -81,4 +60,23 @@ function draw (x,y) {
         
     }
 
-f
+function changeColor(e){
+	if (e.keyCode == 66){
+		color = "blue"
+	};
+	if (e.keyCode == 82){
+		color = "red"
+	};
+	if (e.keyCode == 71){
+		color = "green"
+	};
+	if (e.keyCode == 89){
+		color = "yellow"
+	};
+}
+
+function clearCanvas(e){
+	if (e.keyCode == 32){
+		ctx.clearRect(0,0,canvas.width,canvas.height);
+	}
+}
