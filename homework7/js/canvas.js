@@ -10,8 +10,8 @@ var ctx = canvas.getContext('2d');
 function getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect();
     return {
-        x: evt.clientX - rect.left,
-        y: evt.clientY - rect.top
+        x: evt.offsetX - rect.left,
+        y: evt.offsetY - rect.top
     };
 }
 
@@ -42,10 +42,16 @@ canvas.addEventListener("mousemove", function (e) {
 
 //Add a listener for the keydown
 
-window.addEventListener("keydown", function(e){
+document.addEventListener("keydown", function(e){
 	console.log(this);
 	changeColor(e);
 	clearCanvas(e);
+})
+
+
+clr.addEventListener("input", function(e){
+	console.log(this.value);
+	console.log(e);
 })
 
 // Functions!
