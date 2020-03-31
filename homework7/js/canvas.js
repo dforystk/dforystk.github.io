@@ -36,10 +36,9 @@ canvas.addEventListener("mousemove", function (e) {
 
 //Add a listener for the touch move
 
-// canvas.addEventListener('mousedown', function(e){
-// 	console.log(this);
-// 	console.log(e);
-// })
+canvas.addEventListener("touchmove", function(e){
+	draw(offsetX,offsetY)
+})
 
 //Add a listener for the keydown
 
