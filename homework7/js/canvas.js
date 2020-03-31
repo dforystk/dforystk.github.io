@@ -5,6 +5,7 @@ var x = 50;
 var y = 150;
 var canvas = document.querySelector('#canvas');
 var ctx = canvas.getContext('2d');
+var clr = document.querySelector('#clr');
 
 //You will want to add more
 function getMousePos(canvas, evt) {
@@ -43,15 +44,17 @@ canvas.addEventListener("mousemove", function (e) {
 //Add a listener for the keydown
 
 document.addEventListener("keydown", function(e){
-	console.log(this);
 	changeColor(e);
 	clearCanvas(e);
 })
 
+//Color picker-----------------
 
 clr.addEventListener("input", function(e){
 	console.log(this.value);
 	console.log(e);
+	color = this.value;
+
 })
 
 // Functions!
@@ -86,3 +89,4 @@ function clearCanvas(e){
 		ctx.clearRect(0,0,canvas.width,canvas.height);
 	}
 }
+
