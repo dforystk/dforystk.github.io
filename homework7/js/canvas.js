@@ -35,9 +35,14 @@ canvas.addEventListener("mousemove", function (e) {
 
 
 //Add a listener for the touch move
-
-canvas.addEventListener("touchmove", function(e){
-	draw(offsetX,offsetY)
+window.addEventListener("touchstart", function (e){
+	ctx.beginPath();
+})
+window.addEventListener("touchmove", function(e){
+	draw(mousePos.x, mousePos.y);
+})
+window.addEventListener("touchend", function(e){
+	ctx.closePath();
 })
 
 //Add a listener for the keydown
@@ -89,3 +94,8 @@ function clearCanvas(e){
 	}
 }
 
+function stopDrawing(e){
+	if (e.keyCode == 38){
+		ctx.closePath();
+	}
+}
