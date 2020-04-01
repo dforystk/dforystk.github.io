@@ -36,10 +36,11 @@ canvas.addEventListener("mousemove", function (e) {
 
 //Add a listener for the touch move
 window.addEventListener("touchstart", function (e){
+	console.log(e.touches)
 	ctx.beginPath();
 })
 window.addEventListener("touchmove", function(e){
-	draw(mousePos.x, mousePos.y);
+	draw(e.changedTouches[0].pageX, e.changedTouches[0].pageY);
 })
 window.addEventListener("touchend", function(e){
 	ctx.closePath();
@@ -48,8 +49,10 @@ window.addEventListener("touchend", function(e){
 //Add a listener for the keydown
 
 document.addEventListener("keydown", function(e){
+	console.log(e)
 	changeColor(e);
 	clearCanvas(e);
+	stopStartDrawing(e);
 })
 
 //Color picker-----------------
@@ -94,8 +97,11 @@ function clearCanvas(e){
 	}
 }
 
-function stopDrawing(e){
-	if (e.keyCode == 38){
+function stopStartDrawing(e){
+	if (e.key == "Arrow Up"){
 		ctx.closePath();
+	}
+	if (e.key == "Arrow Down"){
+		ctx.beginPath();
 	}
 }
