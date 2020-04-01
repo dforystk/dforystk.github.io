@@ -49,19 +49,24 @@ window.addEventListener("touchend", function(e){
 //Add a listener for the keydown
 
 document.addEventListener("keydown", function(e){
-	console.log(e)
+	console.log(e);
 	changeColor(e);
 	clearCanvas(e);
-	stopStartDrawing(e);
+	if (e.key == "Arrow Up"){
+		draw(mousePos.x, mousePos.y) = false;
+	}
+	if (e.key == "Arrow Down"){
+		draw(mousePos.x, mousePos.y) = false;
+	}
+	
 })
 
 //Color picker-----------------
 
 clr.addEventListener("input", function(e){
 	console.log(this.value);
-	console.log(e);
+	console.log('Color is now ' + this.value);
 	color = this.value;
-
 })
 
 // Functions!
@@ -72,21 +77,24 @@ function draw (x,y) {
         ctx.beginPath();
         ctx.fillStyle = color;
         ctx.arc(x,y,15,0,2 * Math.PI);
-        ctx.fill();
-        
+        ctx.fill();        
     }
 
 function changeColor(e){
 	if (e.keyCode == 66){
+		console.log('Paint is now blue')
 		color = "rgb(0,128,255)"
 	};
 	if (e.keyCode == 82){
+		console.log('Paint is now red')
 		color = "rgb(255,0,0)"
 	};
 	if (e.keyCode == 71){
+		console.log('Paint is now green')
 		color = "rgb(0,255,0)"
 	};
 	if (e.keyCode == 89){
+		console.log('Paint is now yellow')
 		color = "rgb(255,255,0)"
 	};
 }
@@ -97,11 +105,3 @@ function clearCanvas(e){
 	}
 }
 
-function stopStartDrawing(e){
-	if (e.key == "Arrow Up"){
-		ctx.closePath();
-	}
-	if (e.key == "Arrow Down"){
-		ctx.beginPath();
-	}
-}
