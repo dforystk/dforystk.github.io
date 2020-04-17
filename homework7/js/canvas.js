@@ -53,12 +53,11 @@ document.addEventListener("keydown", function(e){
 	changeColor(e);
 	clearCanvas(e);
 	if (e.key == "Arrow Up"){
-		draw(mousePos.x, mousePos.y) = false;
+		draw(e.mousePos.x, e.mousePos.y) = false;
 	}
 	if (e.key == "Arrow Down"){
-		draw(mousePos.x, mousePos.y) = false;
+		draw(e.mousePos.x, e.mousePos.y) = false;
 	}
-	
 })
 
 //Color picker-----------------
