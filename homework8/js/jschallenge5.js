@@ -1,6 +1,6 @@
 $(document).ready(function (){
-	$('.thumbnail').hover(function () {
-		$('#display').html($(this))
+	$('.thumbnail').hover(function (e) {
+		$('#display').html($(this).attr('alt'));
 	});
 
 });
