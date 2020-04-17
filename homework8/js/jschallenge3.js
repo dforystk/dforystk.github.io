@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 	$('#ch3form').submit(function (e){
 		if (!$('input[type="radio"]').is(':checked')){
